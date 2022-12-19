@@ -1,9 +1,10 @@
 name: pull-request
 on:
   pull_request:
-    types: [opened]
+    types: [opened, labeled, unlabeled]
 jobs:
   assign:
     runs-on: ubuntu-latest
     steps:
-      - uses: li-sumup/actions-assigner@v1.0.2
+      - name: Auto assign PR
+        uses: li-sumup/actions-assigner@v1.0.1

@@ -6,5 +6,4 @@ jobs:
   assign:
     runs-on: ubuntu-latest
     steps:
-      # - uses: li-sumup/actions-assigner@v1
-      - uses: delivery-much/actions-assigner@v1
+      - uses: li-sumup/actions-assigner@v1.0.2
